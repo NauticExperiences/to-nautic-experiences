@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nautic Experiences - Become a TO Partner | Private Cruises Paris</title>
+<meta name="description" content="Nautic Experiences — premium private cocktail &amp; dinner cruise partner for Chinese tour operators and travel agencies in Paris. Fully licensed French operator, Atout France IM075250047.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy: #14213D;
+    --navy-2: #1B2A4A;
+    --navy-3: #0F1830;
+    --cream: #F5F0E6;
+    --cream-2: #EFE8D8;
+    --gold: #C8A24D;
+    --gold-light: #DEC07E;
+    --white: #FFFFFF;
+    --ink: #14213D;
+    --ink-soft: rgba(20,33,61,0.7);
+    --line-light: rgba(255,255,255,0.14);
+    --line-dark: rgba(20,33,61,0.12);
+    --max: 1180px;
+    --radius: 4px;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Montserrat', sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    font-weight:400;
+    line-height:1.6;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  button{font-family:inherit; cursor:pointer;}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 28px;}
+
+  h1,h2,h3{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    line-height:1.15;
+    letter-spacing:0.2px;
+  }
+  em{font-style:italic; color:var(--gold);}
+  .navy em, .on-navy em{color:var(--gold-light);}
+
+  .eyebrow{
+    font-family:'Montserrat', sans-serif;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:2.5px;
+    text-transform:uppercase;
+    color:var(--gold);
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:18px;
+  }
+  .eyebrow::before{content:""; display:inline-block; width:22px; height:1px; background:var(--gold);}
+
+  .section{padding:96px 0;}
+  .section--tight{padding:72px 0;}
+  .on-navy{background:var(--navy); color:var(--white);}
+  .on-navy-2{background:var(--navy-2); color:var(--white);}
+  .on-cream{background:var(--cream);}
+  .on-cream-2{background:var(--cream-2);}
+
+  .section-title{
+    font-size:clamp(30px, 4vw, 44px);
+    margin-bottom:18px;
+  }
+  .section-lede{
+    font-size:16px;
+    color:var(--ink-soft);
+    max-width:560px;
+  }
+  .on-navy .section-lede, .on-navy-2 .section-lede{color:rgba(255,255,255,0.72);}
+  .about-text{max-width:600px;}
+  .about-text p{
+    font-size:15.5px;
+    color:var(--ink-soft);
+    line-height:1.75;
+    margin-bottom:18px;
+  }
+  .about-text p:last-child{margin-bottom:0;}
+
+  /* Buttons */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:14px 28px;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    border-radius:2px;
+    border:1px solid transparent;
+    transition:all .25s ease;
+    white-space:nowrap;
+  }
+  .btn-gold{background:var(--gold); color:var(--navy-3);}
+  .btn-gold:hover{background:var(--gold-light);}
+  .btn-outline-white{border-color:rgba(255,255,255,0.55); color:var(--white);}
+  .btn-outline-white:hover{background:rgba(255,255,255,0.1); border-color:#fff;}
+  .btn-outline-navy{border-color:var(--navy); color:var(--navy);}
+  .btn-outline-navy:hover{background:var(--navy); color:#fff;}
+  .btn-sm{padding:11px 20px; font-size:12px;}
+
+  /* ===== TOP BAR ===== */
+  .topbar{
+    position:sticky; top:0; z-index:50;
+    background:var(--navy-3);
+    border-bottom:1px solid var(--line-light);
+  }
+  .topbar-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 28px;
+    max-width:var(--max); margin:0 auto;
+    gap:20px;
+  }
+  .topbar-logo img{height:40px; width:auto;}
+  .topbar-right{display:flex; align-items:center; gap:22px;}
+  .topbar-phone{
+    display:flex; align-items:center; gap:8px;
+    color:#fff; font-size:14px; font-weight:500;
+  }
+  .topbar-phone svg{width:16px; height:16px; fill:var(--gold);}
+  .topbar-explore{
+    color:rgba(255,255,255,0.75); font-size:13px; font-weight:500;
+    text-decoration:underline; text-underline-offset:3px;
+  }
+  .topbar-explore:hover{color:#fff;}
+  .topbar-wechat svg{width:18px; height:18px;}
+  @media(max-width:900px){
+    .topbar-explore{display:none;}
+  }
+  @media(max-width:680px){
+    .topbar-phone span{display:none;}
+  }
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative;
+    min-height:72vh;
+    display:flex;
+    align-items:flex-end;
+    color:#fff;
+    overflow:hidden;
+  }
+  .hero-bg{
+    position:absolute; inset:0;
+    background-size:cover;
+    background-position:center 35%;
+    overflow:hidden;
+  }
+  .hero-video{
+    width:100%; height:100%;
+    object-fit:cover;
+    object-position:center 35%;
+  }
+  @media(max-width:900px){
+    .hero-video{display:none;}
+  }
+  .hero-bg::after{
+    content:"";
+    position:absolute; inset:0;
+    background:
+      linear-gradient(90deg, rgba(0,0,0,0.68) 0%, rgba(0,0,0,0.4) 32%, rgba(0,0,0,0) 62%),
+      linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.0) 40%, rgba(0,0,0,0.58) 100%);
+  }
+  .hero-inner{
+    position:relative; z-index:2;
+    padding:120px 28px 56px;
+    max-width:var(--max); margin:0 auto;
+    width:100%;
+  }
+  .hero-headline{
+    font-size:clamp(36px, 6vw, 62px);
+    max-width:760px;
+    margin-bottom:22px;
+    text-shadow:0 2px 20px rgba(0,0,0,0.7), 0 1px 4px rgba(0,0,0,0.9);
+  }
+  .hero-sub{
+    max-width:480px;
+    font-size:16px;
+    color:rgba(255,255,255,0.9);
+    margin-bottom:34px;
+    text-shadow:0 1px 12px rgba(0,0,0,0.6);
+  }
+  .hero-ctas{display:flex; gap:16px; flex-wrap:wrap; margin-bottom:54px;}
+
+  .hero-stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1px;
+    background:rgba(255,255,255,0.16);
+    border:1px solid rgba(255,255,255,0.16);
+    border-radius:2px;
+    overflow:hidden;
+  }
+  .hero-stat{
+    background:rgba(15,24,48,0.55);
+    backdrop-filter:blur(6px);
+    padding:18px 20px;
+  }
+  .hero-stat-n{
+    font-family:'Cormorant Garamond', serif;
+    font-size:26px;
+    color:var(--gold-light);
+    display:block;
+  }
+  .hero-stat-l{
+    font-size:11px;
+    letter-spacing:0.5px;
+    color:rgba(255,255,255,0.78);
+    text-transform:uppercase;
+  }
+  @media(max-width:760px){
+    .hero-stats{grid-template-columns:repeat(2,1fr);}
+    .hero-stat:last-child{grid-column:span 2;}
+  }
+
+  /* ===== WHO IS THIS FOR ===== */
+  .who-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+    margin-top:48px;
+  }
+  .who-card{
+    background:var(--white);
+    padding:32px 26px;
+    border-top:2px solid var(--gold);
+    box-shadow:0 1px 3px rgba(20,33,61,0.05);
+  }
+  .who-icon{font-size:26px; margin-bottom:18px; display:block;}
+  .who-role{
+    font-size:11px; letter-spacing:1px; text-transform:uppercase;
+    color:var(--gold); font-weight:600; margin-bottom:8px;
+  }
+  .who-title{
+    font-family:'Cormorant Garamond', serif;
+    font-size:21px; margin-bottom:10px; color:var(--navy);
+  }
+  .who-desc{font-size:13.5px; color:var(--ink-soft); line-height:1.65;}
+  @media(max-width:900px){ .who-grid{grid-template-columns:repeat(2,1fr);} }
+  @media(max-width:540px){ .who-grid{grid-template-columns:1fr;} }
+
+  /* ===== FLEET TABS ===== */
+  .fleet-categories{
+    display:flex; gap:36px; margin-bottom:28px; flex-wrap:wrap;
+  }
+  .fleet-cat-label{
+    font-size:11px; letter-spacing:1.5px; text-transform:uppercase;
+    color:rgba(255,255,255,0.5);
+  }
+  .fleet-tabs{
+    display:flex; gap:10px; flex-wrap:wrap; margin-bottom:40px;
+  }
+  .fleet-tab{
+    background:transparent;
+    border:1px solid rgba(255,255,255,0.3);
+    color:rgba(255,255,255,0.85);
+    padding:10px 22px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:500;
+    transition:all .2s ease;
+  }
+  .fleet-tab.active{
+    background:var(--gold);
+    border-color:var(--gold);
+    color:var(--navy-3);
+    font-weight:600;
+  }
+  .fleet-tab:hover:not(.active){border-color:var(--gold-light); color:#fff;}
+
+  .fleet-panel{display:none;}
+  .fleet-panel.active{display:block; animation:fadein .35s ease;}
+  @keyframes fadein{from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);}}
+
+  .fleet-layout{
+    display:flex;
+    gap:32px;
+    flex-wrap:wrap;
+    align-items:flex-start;
+  }
+  .fleet-photos{
+    display:flex;
+    gap:14px;
+    margin-bottom:0;
+    flex:1.6 1 600px;
+    max-width:760px;
+  }
+  .fleet-main-image{
+      flex:1;
+      border-radius:2px;
+      overflow:hidden;
+      height:420px;
+  }
+  .fleet-main-image img{
+      width:100%; height:100%; object-fit:cover;
+      transition:opacity .3s ease;
+  }
+  .fleet-thumbs{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      width:110px;
+      flex-shrink:0;
+  }
+  .fleet-thumb{
+      border:2px solid transparent;
+      border-radius:2px;
+      overflow:hidden;
+      padding:0;
+      background:none;
+      cursor:pointer;
+      height:130px;
+      opacity:0.55;
+      transition:opacity .2s ease, border-color .2s ease;
+  }
+  .fleet-thumb img{
+      width:100%; height:100%; object-fit:cover; display:block;
+  }
+  .fleet-thumb.active{
+      opacity:1;
+      border-color:var(--gold);
+  }
+  .fleet-thumb:hover{opacity:0.85;}
+  @media(max-width:640px){
+      .fleet-photos{flex-direction:column;}
+      .fleet-main-image{height:280px;}
+      .fleet-thumbs{flex-direction:row; width:100%;}
+      .fleet-thumb{height:70px; flex:1;}
+  }
+
+  .fleet-info-card{
+    flex:1 1 280px;
+    max-width:380px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.14);
+    border-radius:2px;
+    padding:32px 30px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    gap:24px;
+  }
+  .fleet-name{font-size:28px; margin-bottom:8px;}
+  .fleet-desc{color:rgba(255,255,255,0.75); font-size:14.5px;}
+  .fleet-tag{
+    display:inline-block;
+    border:1px solid var(--gold);
+    color:var(--gold-light);
+    font-size:11.5px;
+    letter-spacing:0.5px;
+    padding:9px 16px;
+    border-radius:2px;
+    white-space:nowrap;
+  }
+  @media(max-width:640px){
+    .fleet-layout{flex-direction:column;}
+    .fleet-photos{max-width:100%;}
+  }
+
+  /* ===== INCLUDED TOGGLE ===== */
+  .toggle-row{display:flex; gap:0; margin-bottom:32px; border:1px solid var(--navy); width:fit-content; border-radius:2px; overflow:hidden;}
+  .toggle-btn{
+    padding:13px 26px; font-size:12.5px; font-weight:600; letter-spacing:0.5px;
+    text-transform:uppercase; background:transparent; color:var(--navy); border:none;
+  }
+  .toggle-btn.active{background:var(--navy); color:#fff;}
+  .toggle-panel{display:none;}
+  .toggle-panel.active{display:block; animation:fadein .3s ease;}
+
+  .included-grid{display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:start;}
+  .included-list{list-style:none;}
+  .included-list li{
+    display:flex; flex-wrap:wrap; gap:12px; padding:10px 0;
+    border-bottom:1px solid var(--line-dark);
+    font-size:14.5px;
+  }
+  .included-list li .zh{flex-basis:100%; margin-left:26px; margin-top:0;}
+  .included-list li:last-child{border-bottom:none;}
+  .check{color:var(--gold); font-weight:700; flex-shrink:0;}
+  .menu-placeholder{
+    background:var(--white);
+    border:1px dashed rgba(20,33,61,0.25);
+    border-radius:2px;
+    height:280px;
+    display:flex; align-items:center; justify-content:center;
+    text-align:center;
+    color:var(--ink-soft);
+    font-size:12.5px;
+    letter-spacing:0.3px;
+    padding:20px;
+  }
+  @media(max-width:820px){ .included-grid{grid-template-columns:1fr;} }
+
+  /* ===== LIVE MUSIC HIGHLIGHT ===== */
+  .live-music-highlight{
+    margin-top:48px;
+    background:var(--navy);
+    border-left:3px solid var(--gold);
+    border-radius:2px;
+    padding:0;
+    display:flex;
+    align-items:stretch;
+    overflow:hidden;
+  }
+  .live-music-photo{
+    width:280px;
+    flex-shrink:0;
+    object-fit:cover;
+    object-position:center 20%;
+    display:block;
+  }
+  .live-music-highlight > div{
+    padding:36px 40px;
+  }
+  .live-music-kicker{
+    font-size:11px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase;
+    color:var(--gold); margin-bottom:10px;
+  }
+  .live-music-title{
+    color:#fff; font-size:26px; margin-bottom:14px;
+  }
+  .live-music-title em{color:var(--gold-light);}
+  .live-music-text{
+    color:rgba(255,255,255,0.78); font-size:14.5px; line-height:1.7; max-width:680px;
+  }
+  .live-music-text strong{color:#fff;}
+  @media(max-width:640px){
+    .live-music-highlight{flex-direction:column;}
+    .live-music-photo{width:100%; height:220px;}
+    .live-music-highlight > div{padding:28px 24px;}
+  }
+
+  /* ===== WHY THIS EXPERIENCE STANDS OUT ===== */
+  .stands-out-grid{
+    display:grid;
+    grid-template-columns:0.85fr 1.15fr;
+    gap:50px;
+    align-items:center;
+  }
+  .stands-out-photo{
+    height:100%;
+    min-height:480px;
+    background-size:cover;
+    background-position:center;
+    border-radius:2px;
+  }
+  .why-grid{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:1px;
+    background:rgba(255,255,255,0.1);
+    border:1px solid rgba(255,255,255,0.1);
+  }
+  .why-card{background:var(--navy); padding:26px 22px;}
+  .why-num{
+    font-family:'Cormorant Garamond', serif;
+    font-size:28px; color:var(--gold); display:block; margin-bottom:10px;
+  }
+  .why-title{font-size:15px; font-weight:600; margin-bottom:8px; color:#fff;}
+  .why-desc{font-size:13px; color:rgba(255,255,255,0.68); line-height:1.6;}
+  @media(max-width:900px){
+    .stands-out-grid{grid-template-columns:1fr;}
+    .stands-out-photo{min-height:320px;}
+  }
+  @media(max-width:540px){ .why-grid{grid-template-columns:1fr;} }
+
+  /* ===== PARTNERSHIP MODEL ===== */
+  .model-grid{display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:center;}
+  .model-points{list-style:none; margin-top:24px;}
+  .model-points li{display:flex; flex-wrap:wrap; gap:12px; padding:9px 0; font-size:14.5px;}
+  .model-points li .zh{flex-basis:100%; margin-left:26px; margin-top:0;}
+  @media(max-width:820px){ .model-grid{grid-template-columns:1fr;} }
+
+  /* ===== FAQ ===== */
+  .faq-list{max-width:760px;}
+  .faq-item{border-bottom:1px solid rgba(255,255,255,0.14);}
+  .faq-q{
+    width:100%; display:flex; justify-content:space-between; align-items:flex-start;
+    padding:22px 0; background:none; border:none; color:#fff;
+    font-size:16px; font-weight:500; text-align:left;
+  }
+  .faq-q .plus{color:var(--gold); font-size:20px; transition:transform .25s ease; flex-shrink:0; margin-left:20px; margin-top:2px;}
+  .faq-item.open .faq-q .plus{transform:rotate(45deg);}
+  .faq-a{
+    max-height:0; overflow:hidden; transition:max-height .3s ease;
+    font-size:14.5px; color:rgba(255,255,255,0.72); line-height:1.7;
+  }
+  .faq-a-inner{padding-bottom:22px;}
+  .faq-item.open .faq-a{max-height:420px;}
+
+  /* ===== FORM ===== */
+  .form-grid{display:grid; grid-template-columns:0.85fr 1.15fr; gap:56px;}
+  .form-trust{list-style:none; margin-top:22px;}
+  .form-trust li{display:flex; flex-wrap:wrap; gap:10px; padding:9px 0; font-size:14px; color:var(--ink-soft);}
+  .form-trust li .zh{flex-basis:100%; margin-left:20px; margin-top:0;}
+  .form-box{background:var(--white); padding:40px; border-top:3px solid var(--gold);}
+  .form-row{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-bottom:18px;}
+  .field label{
+    display:block; font-size:11.5px; font-weight:600; letter-spacing:0.5px;
+    text-transform:uppercase; color:var(--navy); margin-bottom:7px;
+  }
+  .field input, .field select, .field textarea{
+    width:100%; padding:12px 14px; border:1px solid rgba(20,33,61,0.18);
+    border-radius:2px; font-family:'Montserrat',sans-serif; font-size:14px;
+    background:#fff; color:var(--ink);
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{
+    outline:2px solid var(--gold); outline-offset:1px; border-color:var(--gold);
+  }
+  .field textarea{resize:vertical; min-height:90px;}
+  .form-submit{width:100%; justify-content:center; margin-top:6px; font-size:13.5px; padding:16px;}
+  .form-note{font-size:12px; color:var(--ink-soft); text-align:center; margin-top:14px;}
+  .form-success{
+    display:none; text-align:center; padding:50px 20px;
+  }
+  .form-success.show{display:block;}
+  .form-success h3{font-size:26px; margin-bottom:10px; color:var(--navy);}
+  .form-success p{color:var(--ink-soft); font-size:14.5px;}
+  @media(max-width:900px){
+    .form-grid{grid-template-columns:1fr;}
+  }
+  @media(max-width:560px){
+    .form-row{grid-template-columns:1fr;}
+    .form-box{padding:26px 20px;}
+  }
+
+  /* ===== TRUST BAND ===== */
+  .trust-band{text-align:center;}
+  .trust-logo{height:38px; width:auto; margin:0 auto 44px;}
+  .trust-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:16px;
+    margin-bottom:30px;
+  }
+  .trust-card{
+    background:rgba(255,255,255,0.96);
+    border-radius:2px;
+    padding:20px 14px;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px;
+    height:130px;
+}
+.trust-card-title{
+    font-size:11px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.4px;
+    color:var(--navy);
+    text-align:center;
+    line-height:1.3;
+}
+  .trust-card img{max-height:38px; max-width:100%; object-fit:contain;}
+  .trust-since{font-size:12.5px; letter-spacing:1px; color:rgba(255,255,255,0.6); text-transform:uppercase;}
+  @media(max-width:900px){ .trust-grid{grid-template-columns:repeat(3,1fr);} }
+  @media(max-width:540px){ .trust-grid{grid-template-columns:repeat(2,1fr);} }
+
+  /* ===== FOOTER ===== */
+  .footer{
+    background:var(--navy-3);
+    color:rgba(255,255,255,0.6);
+    padding:36px 0;
+    font-size:12.5px;
+  }
+  .footer-inner{
+    display:flex; justify-content:space-between; align-items:center;
+    gap:20px; flex-wrap:wrap;
+  }
+  .footer-links{display:flex; gap:22px;}
+  .footer-links a:hover{color:#fff;}
+  @media(max-width:600px){
+    .footer-inner{flex-direction:column; text-align:center;}
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important; scroll-behavior:auto !important;}
+  }
+
+  /* Focus visibility */
+  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible{
+    outline:2px solid var(--gold); outline-offset:2px;
+  }
+
+  /* ===== CHINESE TRANSLATIONS (DRAFT — needs native review before publishing) ===== */
+  .zh{
+    display:block;
+    margin-top:8px;
+    font-family:"PingFang SC","Microsoft YaHei","Heiti TC","Noto Sans CJK SC",sans-serif;
+    opacity:0.6;
+    line-height:1.6;
+    font-size:13.5px;
+    font-weight:400;
+    font-style:normal;
+  }
+  .zh-line{display:block; font-size:13.5px;}
+  .zh-tag{font-weight:700; margin-right:6px; opacity:0.85; font-size:13.5px;}
+  .zh em{font-style:normal; color:inherit;}
+  .whatsapp-float{
+    position:fixed;
+    bottom:24px;
+    right:24px;
+    z-index:999;
+    background:#25D366;
+    color:#fff;
+    width:56px; height:56px;
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 4px 14px rgba(0,0,0,0.25);
+    transition:all .25s ease;
+}
+.whatsapp-float svg{width:28px; height:28px;}
+.whatsapp-float:hover{
+    background:#1ebc59;
+    transform:scale(1.06);
+}
+</style>
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="#" class="topbar-logo"><img src="images/logo-blanc.svg" alt="Nautic Experiences"></a>
+    <div class="topbar-right">
+      <a href="https://nautic-experiences.pro/" target="_blank" rel="noopener" class="topbar-explore">Explore Our Other Services</a>
+      <a href="tel:+33183645674" class="topbar-phone">
+        <svg viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.5 17.311l-1.76-3.397-1.032.505c-1.12.543-3.4-3.91-2.305-4.497l1.042-.513-1.747-3.409-1.053.52c-3.601 1.877 2.117 12.991 5.8 11.308l1.055-.517z"/></svg>
+        <span>(+33) 01 83 64 56 74</span>
+      </a>
+      <a href="#" class="topbar-phone topbar-wechat" title="WeChat: NauticExperiences (update with your real WeChat ID)">
+        <svg viewBox="0 0 24 24" fill="var(--gold)"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.161 4.203 2.976 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.867.403c.276 0 .543-.027.811-.05-.857-2.578.157-5.096 1.996-6.582 1.826-1.485 4.216-1.882 6.404-1.485-.457-3.416-3.966-6.565-9.215-6.565zM5.785 5.657c.554 0 1.003.449 1.003 1.003s-.45 1.003-1.003 1.003a1.003 1.003 0 0 1 0-2.006zm6.03 0c.554 0 1.003.449 1.003 1.003s-.449 1.003-1.003 1.003a1.003 1.003 0 0 1 0-2.006zm5.634 3.14c-3.652 0-6.618 2.472-6.618 5.522 0 3.05 2.966 5.522 6.618 5.522.734 0 1.44-.108 2.099-.294a.727.727 0 0 1 .605.083l1.598.936a.274.274 0 0 0 .14.045.243.243 0 0 0 .244-.243c0-.06-.024-.12-.04-.179l-.328-1.245a.494.494 0 0 1 .18-.559C23.283 17.44 24 16.088 24 14.32c0-3.05-2.966-5.522-6.551-5.522zm-2.588 2.658c.462 0 .837.375.837.836a.836.836 0 1 1-.837-.836zm5.176 0c.462 0 .837.375.837.836a.836.836 0 1 1-.837-.836z"/></svg>
+      </a>
+      <a href="#partner-form" class="btn btn-gold btn-sm">Become a Partner</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('images/hero.jpg');"></div>
+  <div class="hero-inner">
+    <div class="eyebrow" style="color:var(--gold-light);">Paris · Designed for the Chinese Luxury Travel Market</div><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>巴黎 · 专为中国奢华旅游市场设计</span><span class="zh-line"><span class="zh-tag">繁</span>巴黎 · 專為中國奢華旅遊市場設計</span></span>
+    <h1 class="hero-headline">Private Seine cocktail & dinner cruises<br><em> The trusted Paris partner for Chinese tour operators.</em><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>塞纳河私人鸡尾酒与晚餐游船之旅，中国旅行社值得信赖的巴黎合作伙伴。</span><span class="zh-line"><span class="zh-tag">繁</span>塞納河私人雞尾酒與晚餐遊船之旅，中國旅行社值得信賴的巴黎合作伙伴。</span></span></h1>
+    <p class="hero-sub">We help Chinese tour operators offer memorable private experiences in Paris. From cocktail cruises to gala dinners, we manage every operational detail—from catering and entertainment to bilingual coordination—through one licensed local partner.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>我们助力中国旅行社为游客打造难忘的巴黎私享体验。从鸡尾酒巡游到盛大晚宴，我们通过一家持牌本地合作伙伴，统筹管理从餐饮、娱乐到双语协调的每一个运营细节。</span><span class="zh-line"><span class="zh-tag">繁</span>我們助力中國旅行社為遊客打造難忘的巴黎私享體驗。從雞尾酒巡遊到盛大晚宴，我們透過一家持牌本地合作伙伴，統籌管理從餐飲、娛樂到雙語協調的每一個運營細節。</span></span></p>
+    <div class="hero-ctas">
+      <span style="display:inline-block;"><a href="#partner-form" class="btn btn-gold">Become a Partner →</a><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>成为合作伙伴 →</span><span class="zh-line"><span class="zh-tag">繁</span>成為合作伙伴 →</span></span></span>
+      <span style="display:inline-block;"><a href="#fleet" class="btn btn-outline-white">Explore The Fleet</a><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>探索船队</span><span class="zh-line"><span class="zh-tag">繁</span>探索船隊</span></span></span>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="hero-stat-n">180&nbsp;€</span><span class="hero-stat-l">Avg. ticket / pers.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>人均票价</span><span class="zh-line"><span class="zh-tag">繁</span>人均票價</span></span></span></div>
+      <div class="hero-stat"><span class="hero-stat-n">6–40</span><span class="hero-stat-l">People / group<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>每组人数</span><span class="zh-line"><span class="zh-tag">繁</span>每組人數</span></span></span></div>
+      <div class="hero-stat"><span class="hero-stat-n">Licensed French DMC<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>持牌法国目的地管理公司（DMC）</span><span class="zh-line"><span class="zh-tag">繁</span>持牌法國目的地管理公司（DMC）</span></span></span><span class="hero-stat-l">Local Expert · IM075250047<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>当地专家 · IM075250047</span><span class="zh-line"><span class="zh-tag">繁</span>當地專家 · IM075250047</span></span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHO IS THIS FOR ===== -->
+<section class="section on-cream">
+  <div class="wrap">
+    <div class="eyebrow">Who This Is For</div><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>适用人群</span><span class="zh-line"><span class="zh-tag">繁</span>適用人群</span></span>
+    <h2 class="section-title">Built for those who<br><em>fill the groups.</em><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>专为帮您组建团客的伙伴而设计。</span><span class="zh-line"><span class="zh-tag">繁</span>專為幫您組建團客的夥伴而設計。</span></span></h2>
+    <div class="who-grid">
+      <div class="who-card">
+        <span class="who-icon">🧭</span>
+        <div class="who-role">Travel Agency<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>旅行社</span><span class="zh-line"><span class="zh-tag">繁</span>旅行社</span></span></div>
+        <div class="who-title">A signature product to offer<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>一款招牌产品</span><span class="zh-line"><span class="zh-tag">繁</span>一款招牌產品</span></span></div>
+        <p class="who-desc">Offer an exclusive Paris experience that increases the value of your itineraries, without managing logistics<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>提供独家的巴黎体验，提升您的行程价值，且无需您亲自处理后勤事宜</span><span class="zh-line"><span class="zh-tag">繁</span>提供獨家的巴黎體驗，提升您的行程價值，且無需您親自處理後勤事宜</span></span></p>
+      </div>
+      <div class="who-card">
+        <span class="who-icon">🗺️</span>
+        <div class="who-role">Tour Operator<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>旅游运营商</span><span class="zh-line"><span class="zh-tag">繁</span>旅遊運營商</span></span></div>
+        <div class="who-title">A turnkey evening managed by one trusted local operator.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>由一家值得信赖的当地运营商全程打理的一站式晚间行程。</span><span class="zh-line"><span class="zh-tag">繁</span>由一家值得信賴的當地運營商全程打理的一站式晚間行程。</span></span></div>
+        <p class="who-desc">Easily integrate the cruise into your Paris itineraries, with one licensed point of contact.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>通过一位持证的联络人，轻松将游船行程融入您的巴黎行程中。</span><span class="zh-line"><span class="zh-tag">繁</span>透過一位持證的聯絡人，輕鬆將遊船行程融入您的巴黎行程中。</span></span></p>
+      </div>
+      <div class="who-card">
+        <span class="who-icon">🎙️</span>
+        <div class="who-role">Guide / Guide Association<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>导游 / 导游协会</span><span class="zh-line"><span class="zh-tag">繁</span>導遊 / 導遊協會</span></span></div>
+        <div class="who-title">An evening that leaves a mark<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>一个令人难忘的夜晚</span><span class="zh-line"><span class="zh-tag">繁</span>一個令人難忘的夜晚</span></span></div>
+        <p class="who-desc">Give your groups a strong closing moment, with a bilingual guide included on board.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>为您的团队打造一个令人难忘的收尾时刻，行程中将配备一名双语向导。</span><span class="zh-line"><span class="zh-tag">繁</span>為您的團隊打造一個令人難忘的收尾時刻，行程中將配備一名雙語嚮導。</span></span></p>
+      </div>
+      <div class="who-card">
+        <span class="who-icon">🏨</span>
+        <div class="who-role">Hotel Concierge<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>酒店礼宾员</span><span class="zh-line"><span class="zh-tag">繁</span>酒店禮賓員</span></span></div>
+        <div class="who-title">An unforgettable recommendation for VIP guests.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>为贵宾提供难忘的推荐。</span><span class="zh-line"><span class="zh-tag">繁</span>為貴賓提供難忘的推薦。</span></span></div>
+        <p class="who-desc">An experience worthy of your guests, simple to book for them.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>值得您尊贵宾客体验的行程，预订流程简单便捷。</span><span class="zh-line"><span class="zh-tag">繁</span>值得您尊貴賓客體驗的行程，預訂流程簡單便捷。</span></span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHO WE ARE ===== -->
+<section class="section on-cream-2">
+  <div class="wrap">
+    <div class="model-grid" style="align-items:stretch;">
+      <div>
+        <div class="eyebrow">Who We Are</div>
+        <h2 class="section-title">Nautic Experiences: <br><em>Paris Cruise Experts Since 2017.</em><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>Nautic Experiences：自2017年起，巴黎游船专家。</span><span class="zh-line"><span class="zh-tag">繁</span>Nautic Experiences：自2017年起，巴黎遊船專家。</span></span></h2>
+        <div class="about-text">
+          <p>Choosing the right local partner is essential to delivering exceptional experiences.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>选择合适的当地合作伙伴，对于提供卓越的体验至关重要。</span><span class="zh-line"><span class="zh-tag">繁</span>選擇合適的當地合作伙伴，對於提供卓越的體驗至關重要。</span></span></p>
+          <p>Since 2017, Nautic Experiences has been designing and operating private cocktail and dinner cruises on the Seine for international groups. We combine elegant boats, refined catering, live entertainment and seamless event coordination to create memorable experiences in the heart of Paris.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>自2017年以来，Nautic Experiences一直致力于为国际团体设计并运营塞纳河上的私人鸡尾酒会及晚宴游船活动。我们融合优雅的游船、精致的餐饮、现场娱乐表演以及无缝衔接的活动协调，在巴黎市中心为您打造难忘的体验。</span><span class="zh-line"><span class="zh-tag">繁</span>自2017年以來，Nautic Experiences一直致力於為國際團體設計並運營塞納河上的私人雞尾酒會及晚宴遊船活動。我們融合優雅的遊船、精緻的餐飲、現場娛樂表演以及無縫銜接的活動協調，在巴黎市中心為您打造難忘的體驗。</span></span></p>
+          <p>Unlike many providers, we are not simply an intermediary. We work directly with trusted shipowners and coordinate every aspect of each event — from the initial quotation to the guests' departure. This means one local partner, one dedicated point of contact and consistently high service standards.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>与许多服务商不同，我们并非单纯的中介。我们直接与值得信赖的船东合作，并统筹协调每场活动的方方面面——从初步报价到宾客离船。这意味着您将拥有一个本地合作伙伴、一位专属联络人，以及始终如一的高水准服务。</span><span class="zh-line"><span class="zh-tag">繁</span>與許多服務商不同，我們並非單純的中介。我們直接與值得信賴的船東合作，並統籌協調每場活動的方方面面——從初步報價到賓客離船。這意味著您將擁有一個本地合作伙伴、一位專屬聯絡人，以及始終如一的高水準服務。</span></span></p>
+          <p>As a fully licensed French travel operator (Atout France), backed by professional liability insurance and a financial guarantee, we provide the reliability and peace of mind international tour operators expect. We coordinate with our partners in French and English, with experience welcoming Asian luxury travellers and a Chinese-speaking guide available on board on request, to help our partners deliver flawless events with complete confidence.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>作为一家持有法国旅游运营商完整执照（Atout France）、并拥有专业责任保险和财务担保支持的企业，我们能够提供国际旅行社所期待的可靠服务与安心保障。我们以法语和英语与合作伙伴进行协调，拥有接待亚洲奢华旅行者的丰富经验，并可根据要求安排船上中文导游，助力合作伙伴充满信心地举办完美无瑕的活动。</span><span class="zh-line"><span class="zh-tag">繁</span>作為一家持有法國旅遊運營商完整執照（Atout France）、並擁有專業責任保險和財務擔保支援的企業，我們能夠提供國際旅行社所期待的可靠服務與安心保障。我們以法語和英語與合作伙伴進行協調，擁有接待亞洲奢華旅行者的豐富經驗，並可根據要求安排船上中文導遊，助力合作伙伴充滿信心地舉辦完美無瑕的活動。</span></span></p>
+        </div>
+        <ul class="model-points">
+          <li><span class="check" style="color:var(--gold);">✓</span> Cruise operator since 2017<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>自2017年起从事邮轮业务</span><span class="zh-line"><span class="zh-tag">繁</span>自2017年起從事郵輪業務</span></span></li>
+          <li><span class="check" style="color:var(--gold);">✓</span> Registered French company, Paris head office<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>法国注册公司，总部位于巴黎</span><span class="zh-line"><span class="zh-tag">繁</span>法國註冊公司，總部位於巴黎</span></span></li>
+          <li><span class="check" style="color:var(--gold);">✓</span> Fully licensed French travel operator (Atout France)<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>持有法国旅游运营商完整执照（Atout France）</span><span class="zh-line"><span class="zh-tag">繁</span>持有法國旅遊運營商完整執照（Atout France）</span></span></li>
+          <li><span class="check" style="color:var(--gold);">✓</span> Professional liability insurance &amp; financial guarantee<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>专业责任保险及财务担保</span><span class="zh-line"><span class="zh-tag">繁</span>專業責任保險及財務擔保</span></span></li>
+          <li><span class="check" style="color:var(--gold);">✓</span> Direct partnerships with trusted shipowners<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>与值得信赖的船东建立直接合作伙伴关系</span><span class="zh-line"><span class="zh-tag">繁</span>與值得信賴的船東建立直接合作伙伴關係</span></span></li>
+          <li><span class="check" style="color:var(--gold);">✓</span> One dedicated contact coordinating every detail.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>一位专属联系人负责协调每个细节。</span><span class="zh-line"><span class="zh-tag">繁</span>一位專屬聯絡人負責協調每個細節。</span></span></li>
+        </ul>
+      </div>
+      <div style="height:100%; min-height:340px; display:flex; flex-direction:column; gap:14px;">
+        <div style="flex:1; background-image:url('images/jaures-ext.jpg'); background-size:cover; background-position:center; border-radius:2px;"></div>
+        <div style="flex:1; background-image:url('images/about-us.jpg'); background-size:cover; background-position:center; border-radius:2px; position:relative;">
+          <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(0deg, rgba(15,24,48,0.85) 0%, rgba(15,24,48,0) 100%); padding:24px 20px 14px; text-align:left;">
+            <span style="font-family:'Cormorant Garamond', serif; font-size:19px; color:#fff; display:block;">Curating cruise experiences since 2017</span>
+            <span style="font-size:10.5px; text-transform:uppercase; letter-spacing:1px; color:rgba(255,255,255,0.75);">Paris head office &amp; operations</span>
+            <span class="zh" style="margin-top:8px;"><span class="zh-line" style="color:#fff; opacity:0.85;"><span class="zh-tag" style="color:var(--gold-light);">简</span>自2017年起精心策划邮轮体验</span><span class="zh-line" style="color:#fff; opacity:0.85;"><span class="zh-tag" style="color:var(--gold-light);">繁</span>自2017年起精心策劃郵輪體驗</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FLEET ===== -->
+<section class="section on-navy" id="fleet">
+  <div class="wrap">
+    <div class="eyebrow">Our Fleet</div><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>我们的船队</span><span class="zh-line"><span class="zh-tag">繁</span>我們的船隊</span></span>
+    <h2 class="section-title">Seven boats.<br><em>One single standard: elegance.</em><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>七艘游船。一个共同标准：优雅。</span><span class="zh-line"><span class="zh-tag">繁</span>七艘遊船。一個共同標準：優雅。</span></span></h2>
+    <p class="section-lede" style="margin-bottom:40px;">From intimate dinners for 6 guests to full receptions for 130, every group finds its match.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>无论是仅6位宾客的私密晚宴，还是130人的盛大招待会，各类团体都能找到理想之选。</span><span class="zh-line"><span class="zh-tag">繁</span>無論是僅6位賓客的私密晚宴，還是130人的盛大招待會，各類團體都能找到理想之選。</span></span></p>
+
+    <div class="fleet-tabs" id="fleetTabs">
+      <button class="fleet-tab active" data-boat="jaures">Jaurès</button>
+      <button class="fleet-tab" data-boat="montmartre">Montmartre</button>
+      <button class="fleet-tab" data-boat="odeon">Odéon</button>
+      <button class="fleet-tab" data-boat="concorde">Concorde</button>
+      <button class="fleet-tab" data-boat="boulogne">Boulogne</button>
+      <button class="fleet-tab" data-boat="bastille">Bastille</button>
+      <button class="fleet-tab" data-boat="belleville">Belleville</button>
+    </div>
+
+    <div class="fleet-panel active" data-boat="jaures">
+      <div class="fleet-layout">
+      <div class="fleet-photos">
+        <div class="fleet-main-image">
+          <img src="images/jaures-ext.jpg" alt="Jaurès, yacht devant Notre-Dame">
+        </div>
+        <div class="fleet-thumbs">
+          <button class="fleet-thumb active" data-src="images/jaures-ext.jpg" data-alt="Jaurès, devant Notre-Dame">
+            <img src="images/jaures-ext.jpg" alt="">
+          </button>
+          <button class="fleet-thumb" data-src="images/jaures-int.jpg" data-alt="Jaurès, table dressée avec vue Tour Eiffel">
+            <img src="images/jaures-int.jpg" alt="">
+          </button>
+          <button class="fleet-thumb" data-src="images/jaures-ext-2.jpg" data-alt="Jaurès, pont extérieur">
+            <img src="images/jaures-ext-2.jpg" alt="">
+          </button>
+        </div>
+      </div>
+      <div class="fleet-info-card">
+        <div>
+          <h3 class="fleet-name">Jaurès</h3>
+          <p class="fleet-desc">Parisian elegance in our most private format. Jaurès favors closeness and attentive service, perfect for small premium groups seeking true exclusivity.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>在最私密的氛围中尽显巴黎风韵。Jaurès 注重亲密感与细致周到的服务，是追求真正专属体验的小型高端团体的理想之选。</span><span class="zh-line"><span class="zh-tag">繁</span>在最私密的氛圍中盡顯巴黎風韻。Jaurès 注重親密感與細緻周到的服務，是追求真正專屬體驗的小型高階團體的理想之選。</span></span></p>
+        </div>
+        <div>
+          <span class="fleet-tag">6–12 seated (ideal 8) · Up to 18 cocktail</span><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>6–12人正餐（8人最理想）· 最多18人鸡尾酒会</span><span class="zh-line"><span class="zh-tag">繁</span>6–12人正餐（8人最理想）· 最多18人雞尾酒會</span></span>
+          <a href="#partner-form" class="btn btn-gold btn-sm" style="margin-top:16px; width:fit-content;">Ask About This Boat &rarr;</a><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>咨询此船 →</span><span class="zh-line"><span class="zh-tag">繁</span>諮詢此船 →</span></span>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="fleet-panel" data-boat="montmartre">
+      <div class="fleet-layout">
+      <div class="fleet-photos">
+        <div class="fleet-main-image">
+          <img src="images/montmartre-ext.jpg" alt="Montmartre, yacht sur la Seine">
+        </div>
+        <div class="fleet-thumbs">
+          <button class="fleet-thumb active" data-src="images/montmartre-ext.jpg" data-alt="Montmartre, extérieur sur la Seine">
+            <img src="images/montmartre-ext.jpg" alt="">
+          </button>
+          <button class="fleet-thumb" data-src="images/montmartre-int.jpg" data-alt="Montmartre, salon intérieur">
+            <img src="images/montmartre-int.jpg" alt="">
+          </button>
+          <button class="fleet-thumb" data-src="images/montmartre-int-2.jpg" data-alt="Montmartre, salon intérieur">
+            <img src="images/montmartre-int-2.jpg" alt="">
+          </button>
+        </div>
+      </div>
+      <div class="fleet-info-card">
+        <div>
+          <h3 class="fleet-name">Montmartre</h3>
+          <p class="fleet-desc">A refined and versatile vessel, striking the balance between intimacy and volume — ideal for mid-sized groups looking for a polished, elegant evening.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>一处精致且用途多样的空间，在私密感与空间感之间取得完美平衡——非常适合希望度过一个优雅精致之夜的中等规模团体。</span><span class="zh-line"><span class="zh-tag">繁</span>一處精緻且用途多樣的空間，在私密感與空間感之間取得完美平衡——非常適合希望度過一個優雅精緻之夜的中等規模團體。</span></span></p>
+        </div>
+        <div>
+          <span class="fleet-tag">Up to 42 seated · Up to 60 cocktail</span><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>最多可容纳42人就座 · 最多可容纳60人鸡尾酒会</span><span class="zh-line"><span class="zh-tag">繁</span>最多可容納42人就座 · 最多可容納60人雞尾酒會</span></span>
+          <a href="#partner-form" class="btn btn-gold btn-sm" style="margin-top:16px; width:fit-content;">Ask About This Boat &rarr;</a><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>咨询此船 →</span><span class="zh-line"><span class="zh-tag">繁</span>諮詢此船 →</span></span>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="fleet-panel" data-boat="odeon">
+      <div class="fleet-layout">
+      <div class="fleet-photos">
+        <div class="fleet-main-image">
+          <img src="images/odeon-ext.jpg" alt="Odéon, bateau à roues, devant Notre-Dame">
+        </div>
+        <div class="fleet-thumbs">
+          <button class="fleet-thumb active" data-src="images/odeon-ext.jpg" data-alt="Odéon, devant Notre-Dame">
+            <img src="images/odeon-ext.jpg" alt="">
+          </button>
+          <button class="fleet-thumb" data-src="images/odeon-int.jpg" data-alt="Odéon, escalier intérieur et salons">
+            <img src="images/odeon-int.jpg" alt="">
+          </button>
+          <button class="fleet-thumb" data-src="images/odeon-int-2.jpg" data-alt="Odéon, salon intérieur">
+            <img src="images/odeon-int-2.jpg" alt="">
+          </button>
+        </div>
+      </div>
+      <div class="fleet-info-card">
+        <div>
+          <h3 class="fleet-name">Odéon</h3>
+          <p class="fleet-desc">Bastille's sister ship, sharing the same grand paddle-steamer spirit. Rich interiors with a cozy ambiance, ideal for groups seeking grand-format prestige.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>作为 Bastille 的姊妹船，它同样承袭了宏伟的明轮船精神。内饰豪华，氛围温馨，非常适合追求盛大而尊贵体验的团体。</span><span class="zh-line"><span class="zh-tag">繁</span>作為 Bastille 的姊妹船，它同樣承襲了宏偉的明輪船精神。內飾豪華，氛圍溫馨，非常適合追求盛大而尊貴體驗的團體。</span></span></p>
+        </div>
+        <div>
+          <span class="fleet-tag">Up to 60 seated · Up to 60 cocktail</span><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>最多可容纳60人就座 · 最多可容纳60人鸡尾酒会</span><span class="zh-line"><span class="zh-tag">繁</span>最多可容納60人就座 · 最多可容納60人雞尾酒會</span></span>
+          <a href="#partner-form" class="btn btn-gold btn-sm" style="margin-top:16px; width:fit-content;">Ask About This Boat &rarr;</a><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>咨询此船 →</span><span class="zh-line"><span class="zh-tag">繁</span>諮詢此船 →</span></span>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="fleet-panel" data-boat="concorde">
+      <div class="fleet-layout">
+      <div class="fleet-photos">
+        <div class="fleet-main-image">
+          <img src="images/concorde-ext.jpg" alt="Concorde, yacht devant le Musée d'Orsay">
+        </div>
+        <div class="fleet-thumbs">
+          <button class="fleet-thumb active" data-src="images/concorde-ext.jpg" data-alt="Concorde, devant le Musée d'Orsay">
+            <img src="images/concorde-ext.jpg" alt="">
+          </button>
+          <button class="fleet-thumb" data-src="images/concorde-int.jpg" data-alt="Concorde, espace lounge intérieur">
+            <img src="images/concorde-int.jpg" alt="">
+          </button>
+          <button class="fleet-thumb" data-src="images/concorde-ext-2.jpg" data-alt="Concorde, extérieur sur la Seine">
+            <img src="images/concorde-ext-2.jpg" alt="">
+          </button>
+        </div>
+      </div>
+      <div class="fleet-info-card">
+        <div>
+          <h3 class="fleet-name">Concorde</h3>
+          <p class="fleet-desc">Warm woodwork and a cozy atmosphere: Concorde offers a refined setting, perfect for group dinners that take the time to enjoy the Seine.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>温暖的木质装饰与舒适的氛围：Concorde 提供精致的用餐环境，非常适合希望从容欣赏塞纳河风光的团体晚宴。</span><span class="zh-line"><span class="zh-tag">繁</span>溫暖的木質裝飾與舒適的氛圍：Concorde 提供精緻的用餐環境，非常適合希望從容欣賞塞納河風光的團體晚宴。</span></span></p>
+        </div>
+        <div>
+          <span class="fleet-tag">30–60 seated · Up to 80 cocktail</span><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>30–60人（正餐）· 最多80人（鸡尾酒会）</span><span class="zh-line"><span class="zh-tag">繁</span>30–60人（正餐）· 最多80人（雞尾酒會）</span></span>
+          <a href="#partner-form" class="btn btn-gold btn-sm" style="margin-top:16px; width:fit-content;">Ask About This Boat &rarr;</a><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>咨询此船 →</span><span class="zh-line"><span class="zh-tag">繁</span>諮詢此船 →</span></span>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="fleet-panel" data-boat="boulogne">
+      <div class="fleet-layout">
+      <div class="fleet-photos">
+        <div class="fleet-main-image">
+          <img src="images/boulogne-ext.jpg" alt="Boulogne, yacht devant Notre-Dame">
+        </div>
+        <div class="fleet-thumbs">
+          <button class="fleet-thumb active" data-src="images/boulogne-ext.jpg" data-alt="Boulogne, devant Notre-Dame">
+            <img src="images/boulogne-ext.jpg" alt="">
+          </button>
+          <button class="fleet-thumb" data-src="images/boulogne-int.jpg" data-alt="Boulogne, salon lounge à bord">
+            <img src="images/boulogne-int.jpg" alt="">
+          </button>
+          <button class="fleet-thumb" data-src="images/boulogne-int-2.jpg" data-alt="Boulogne, salon intérieur">
+            <img src="images/boulogne-int-2.jpg" alt="">
+          </button>
+        </div>
+      </div>
+      <div class="fleet-info-card">
+        <div>
+          <h3 class="fleet-name">Boulogne</h3>
+          <p class="fleet-desc">Sleek silhouette and contemporary lines, Boulogne combines volume and refinement for groups wanting both conviviality and fine dining.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>Boulogne 拥有流线型的轮廓和现代感十足的线条，将宽敞空间与精致格调完美融合，专为既追求欢聚氛围又渴望享受精致餐饮的团体而设计。</span><span class="zh-line"><span class="zh-tag">繁</span>Boulogne 擁有流線型的輪廓和現代感十足的線條，將寬敞空間與精緻格調完美融合，專為既追求歡聚氛圍又渴望享受精緻餐飲的團體而設計。</span></span></p>
+        </div>
+        <div>
+          <span class="fleet-tag">30–60 seated · Up to 80 cocktail</span><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>30–60个座位 · 最多可容纳80人举办鸡尾酒会</span><span class="zh-line"><span class="zh-tag">繁</span>30–60個座位 · 最多可容納80人舉辦雞尾酒會</span></span>
+          <a href="#partner-form" class="btn btn-gold btn-sm" style="margin-top:16px; width:fit-content;">Ask About This Boat &rarr;</a><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>咨询此船 →</span><span class="zh-line"><span class="zh-tag">繁</span>諮詢此船 →</span></span>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="fleet-panel" data-boat="bastille">
+      <div class="fleet-layout">
+      <div class="fleet-photos">
+        <div class="fleet-main-image">
+          <img src="images/bastille-ext.jpg" alt="Bastille, bateau à roues, extérieur sur la Seine">
+        </div>
+        <div class="fleet-thumbs">
+          <button class="fleet-thumb active" data-src="images/bastille-ext.jpg" data-alt="Bastille, extérieur sur la Seine">
+            <img src="images/bastille-ext.jpg" alt="">
+          </button>
+          <button class="fleet-thumb" data-src="images/bastille-int.jpg" data-alt="Bastille, salle de réception intérieure">
+            <img src="images/bastille-int.jpg" alt="">
+          </button>
+          <button class="fleet-thumb" data-src="images/bastille-int-2.jpg" data-alt="Bastille, salle de réception">
+            <img src="images/bastille-int-2.jpg" alt="">
+          </button>
+        </div>
+      </div>
+      <div class="fleet-info-card">
+        <div>
+          <h3 class="fleet-name">Bastille</h3>
+          <p class="fleet-desc">An iconic paddle-wheel boat, built for the wow factor and large volumes. Its majestic silhouette and paddle wheel make a strong visual statement for groups.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>这艘标志性的明轮船专为营造震撼效果和容纳大型团体而打造。其雄伟的轮廓与明轮为团体活动带来强烈的视觉冲击。</span><span class="zh-line"><span class="zh-tag">繁</span>這艘標誌性的明輪船專為營造震撼效果和容納大型團體而打造。其雄偉的輪廓與明輪為團體活動帶來強烈的視覺衝擊。</span></span></p>
+        </div>
+        <div>
+          <span class="fleet-tag">Up to 130 seated · Up to 130 cocktail</span><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>最多可容纳130人就座 · 最多可容纳130人鸡尾酒会</span><span class="zh-line"><span class="zh-tag">繁</span>最多可容納130人就座 · 最多可容納130人雞尾酒會</span></span>
+          <a href="#partner-form" class="btn btn-gold btn-sm" style="margin-top:16px; width:fit-content;">Ask About This Boat &rarr;</a><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>咨询此船 →</span><span class="zh-line"><span class="zh-tag">繁</span>諮詢此船 →</span></span>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="fleet-panel" data-boat="belleville">
+      <div class="fleet-layout">
+      <div class="fleet-photos">
+        <div class="fleet-main-image">
+          <img src="images/belleville-ext.jpg" alt="Belleville, yacht devant le Pont Alexandre III">
+        </div>
+        <div class="fleet-thumbs">
+          <button class="fleet-thumb active" data-src="images/belleville-ext.jpg" data-alt="Belleville, devant le Pont Alexandre III">
+            <img src="images/belleville-ext.jpg" alt="">
+          </button>
+          <button class="fleet-thumb" data-src="images/belleville-int.jpg" data-alt="Belleville, salon principal et bar">
+            <img src="images/belleville-int.jpg" alt="">
+          </button>
+          <button class="fleet-thumb" data-src="images/belleville-int-2.jpg" data-alt="Belleville, salon intérieur">
+            <img src="images/belleville-int-2.jpg" alt="">
+          </button>
+        </div>
+      </div>
+      <div class="fleet-info-card">
+        <div>
+          <h3 class="fleet-name">Belleville</h3>
+          <p class="fleet-desc">The flagship of the fleet: classic lines, generous decks, and polished lounges, for evenings that live up to its name.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>船队的旗舰：经典的线条、宽敞的甲板和精致的休息室，让您度过名副其实的精彩夜晚。</span><span class="zh-line"><span class="zh-tag">繁</span>船隊的旗艦：經典的線條、寬敞的甲板和精緻的休息室，讓您度過名副其實的精彩夜晚。</span></span></p>
+        </div>
+        <div>
+          <span class="fleet-tag">70–130 seated · Up to 180 cocktail</span><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>70–130人（正餐）· 最多180人（鸡尾酒会）</span><span class="zh-line"><span class="zh-tag">繁</span>70–130人（正餐）· 最多180人（雞尾酒會）</span></span>
+          <a href="#partner-form" class="btn btn-gold btn-sm" style="margin-top:16px; width:fit-content;">Ask About This Boat &rarr;</a><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>咨询此船 →</span><span class="zh-line"><span class="zh-tag">繁</span>諮詢此船 →</span></span>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== THE EXPERIENCE ===== -->
+<section class="section on-cream">
+  <div class="wrap">
+    <div class="eyebrow">The Gala Cruise Experience</div><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>盛大的邮轮体验</span><span class="zh-line"><span class="zh-tag">繁</span>盛大的郵輪體驗</span></span>
+    <h2 class="section-title">A dinner cruise designed<br>down to <em>the last detail.</em><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>一场精心设计、细节考究的晚餐游轮之旅。</span><span class="zh-line"><span class="zh-tag">繁</span>一場精心設計、細節考究的晚餐遊輪之旅。</span></span></h2>
+
+    <div class="toggle-row">
+      <button class="toggle-btn active" data-toggle="included">Included in every package</button>
+      <button class="toggle-btn" data-toggle="optional">Optional add-ons</button>
+    </div>
+
+    <div class="toggle-panel active" data-toggle="included">
+      <div class="included-grid">
+        <ul class="included-list">
+          <li><span class="check">✓</span> Your choice of format: cocktail reception or seated dinner cruise<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>可选活动形式：鸡尾酒会或坐席晚宴游船</span><span class="zh-line"><span class="zh-tag">繁</span>可選活動形式：雞尾酒會或坐席晚宴遊船</span></span></li>
+          <li><span class="check">✓</span> 4-hour private cruise on the Seine<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>塞纳河4小时私人游船之旅</span><span class="zh-line"><span class="zh-tag">繁</span>塞納河4小時私人遊船之旅</span></span></li>
+          <li><span class="check">✓</span> 4-course menu, tailored to any culinary preference<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>4道菜的套餐，可根据您的饮食偏好量身定制</span><span class="zh-line"><span class="zh-tag">繁</span>4道菜的套餐，可根據您的飲食偏好量身定製</span></span></li>
+          <li><span class="check">✓</span> Welcome champagne and onboard drinks<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>欢迎香槟及船上饮品</span><span class="zh-line"><span class="zh-tag">繁</span>歡迎香檳及船上飲品</span></span></li>
+          <li><span class="check">✓</span> Live music, with your choice of style on board<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>现场音乐表演，您可在船上选择喜欢的音乐风格</span><span class="zh-line"><span class="zh-tag">繁</span>現場音樂表演，您可在船上選擇喜歡的音樂風格</span></span></li>
+          <li><span class="check">✓</span> Onboard guide<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>船上导游</span><span class="zh-line"><span class="zh-tag">繁</span>船上導遊</span></span></li>
+          <li><span class="check">✓</span> Photo moment facing the illuminated Eiffel Tower<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>面对灯光璀璨的埃菲尔铁塔的拍照时刻</span><span class="zh-line"><span class="zh-tag">繁</span>面對燈光璀璨的埃菲爾鐵塔的拍照時刻</span></span></li>
+        </ul>
+        <div class="menu-placeholder" style="background-image:url('images/dining-onboard.jpg');background-size:cover;background-position:center;border:none;height:340px;"></div>
+      </div>
+    </div>
+
+    <div class="toggle-panel" data-toggle="optional">
+      <ul class="included-list" style="max-width:560px;">
+        <li><span class="check">+</span> Chinese-speaking guide on board (subject to availability)<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>船上中文导游（视供应情况而定）</span><span class="zh-line"><span class="zh-tag">繁</span>船上中文導遊（視供應情況而定）</span></span></li>
+        <li><span class="check">+</span> Custom decoration and signage<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>定制装饰和标识</span><span class="zh-line"><span class="zh-tag">繁</span>定製裝飾和標識</span></span></li>
+        <li><span class="check">+</span> Professional photographer on board<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>船上专业摄影师</span><span class="zh-line"><span class="zh-tag">繁</span>船上專業攝影師</span></span></li>
+        <li><span class="check">+</span> Extended cruise time<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>延长巡航时间</span><span class="zh-line"><span class="zh-tag">繁</span>延長巡航時間</span></span></li>
+        <li><span class="check">+</span> Additional entertainment or show<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>额外娱乐或表演</span><span class="zh-line"><span class="zh-tag">繁</span>額外娛樂或表演</span></span></li>
+      </ul>
+    </div>
+
+    <div class="live-music-highlight">
+      <img src="images/singer.jpg" alt="Chanteuse en direct à bord" class="live-music-photo">
+      <div>
+        <div class="live-music-kicker">The Experience's Big Highlight<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>本次体验的最大亮点</span><span class="zh-line"><span class="zh-tag">繁</span>本次體驗的最大亮點</span></span></div>
+        <h3 class="live-music-title">Live music, <em>right on the Seine.</em><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>塞纳河畔的现场音乐。</span><span class="zh-line"><span class="zh-tag">繁</span>塞納河畔的現場音樂。</span></span></h3>
+        <p class="live-music-text">To justify this luxury positioning and truly leave a lasting impression, the offer doesn't stop at the boat and the meal. We include <strong>live music</strong> in every package by default, with your choice of style on board — from jazz to French classics like Édith Piaf. It accompanies guests and animates the evening throughout the cruise — exactly the kind of exclusive entertainment that resonates with this clientele.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>为了彰显这一奢华定位并真正给宾客留下深刻印象，我们的服务绝不仅限于游船和美食。每个套餐默认都包含现场音乐表演，您可在船上自由选择音乐风格——从爵士乐到埃迪特·皮亚芙等法国经典曲目。现场音乐将伴随宾客全程，为整个航程的夜晚增添活力——这正是能引起这一客户群体共鸣的独家娱乐体验。</span><span class="zh-line"><span class="zh-tag">繁</span>為了彰顯這一奢華定位並真正給賓客留下深刻印象，我們的服務絕不僅限於遊船和美食。每個套餐預設都包含現場音樂表演，您可在船上自由選擇音樂風格——從爵士樂到埃迪特·皮亞芙等法國經典曲目。現場音樂將伴隨賓客全程，為整個航程的夜晚增添活力——這正是能引起這一客戶群體共鳴的獨家娛樂體驗。</span></span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY THIS EXPERIENCE STANDS OUT ===== -->
+<section class="section on-navy">
+  <div class="wrap">
+    <div class="stands-out-grid">
+      <div class="stands-out-photo" style="background-image:url('images/poeple-cruising-2.jpg');"></div>
+      <div>
+        <div class="eyebrow">Why This Experience Stands Out</div><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>为何此次体验与众不同</span><span class="zh-line"><span class="zh-tag">繁</span>為何此次體驗與眾不同</span></span>
+        <h2 class="section-title">More than a cruise.<br><em>A Paris memory to treasure.</em><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>不仅仅是一次游轮之旅。一段值得珍藏的巴黎回忆。</span><span class="zh-line"><span class="zh-tag">繁</span>不僅僅是一次遊輪之旅。一段值得珍藏的巴黎回憶。</span></span></h2>
+        <div class="why-grid" style="margin-top:32px;">
+          <div class="why-card">
+            <span class="why-num">01</span>
+            <div class="why-title">Entirely Private<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>完全私密</span><span class="zh-line"><span class="zh-tag">繁</span>完全私密</span></span></div>
+            <p class="why-desc">No shared departures. Every cruise is exclusively reserved for your group.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>绝无拼团出发。每趟游轮之旅均专为您一行人包船。</span><span class="zh-line"><span class="zh-tag">繁</span>絕無拼團出發。每趟遊輪之旅均專為您一行人包船。</span></span></p>
+          </div>
+          <div class="why-card">
+            <span class="why-num">02</span>
+            <div class="why-title">More Than a Cruise<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>不仅仅是一次邮轮之旅</span><span class="zh-line"><span class="zh-tag">繁</span>不僅僅是一次郵輪之旅</span></span></div>
+            <p class="why-desc">Cocktail or dinner, live music, bilingual guide and Paris by night in one seamless experience.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>鸡尾酒或晚餐、现场音乐、双语导游以及巴黎夜景，融为一体的完美体验。</span><span class="zh-line"><span class="zh-tag">繁</span>雞尾酒或晚餐、現場音樂、雙語導遊以及巴黎夜景，融為一體的完美體驗。</span></span></p>
+          </div>
+          <div class="why-card">
+            <span class="why-num">03</span>
+            <div class="why-title">Tailored for International Groups<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>专为国际团体量身定制</span><span class="zh-line"><span class="zh-tag">繁</span>專為國際團體量身定製</span></span></div>
+            <p class="why-desc">Flexible schedules, adapted menus and personalized coordination for your clients.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>灵活的行程安排、量身定制的菜单以及为您的客户提供的个性化协调服务。</span><span class="zh-line"><span class="zh-tag">繁</span>靈活的行程安排、量身定製的選單以及為您的客戶提供的個性化協調服務。</span></span></p>
+          </div>
+          <div class="why-card">
+            <span class="why-num">04</span>
+            <div class="why-title">An Iconic Paris Memory<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>一段标志性的巴黎回忆</span><span class="zh-line"><span class="zh-tag">繁</span>一段標誌性的巴黎回憶</span></span></div>
+            <p class="why-desc">A premium evening combining gastronomy, entertainment and the beauty of the Seine.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>一场将美食、娱乐与塞纳河美景完美融合的顶级之夜。</span><span class="zh-line"><span class="zh-tag">繁</span>一場將美食、娛樂與塞納河美景完美融合的頂級之夜。</span></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PARTNERSHIP MODEL ===== -->
+<section class="section on-cream-2">
+  <div class="wrap">
+    <div class="eyebrow">Partnership Model</div><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>合作伙伴模式</span><span class="zh-line"><span class="zh-tag">繁</span>合作伙伴模式</span></span>
+    <div class="model-grid">
+      <div>
+        <h2 class="section-title">Simple, transparent,<br><em>no surprises.</em><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>简单、透明、毫无意外。</span><span class="zh-line"><span class="zh-tag">繁</span>簡單、透明、毫無意外。</span></span></h2>
+        <p class="section-lede">We handle the cruise, you handle your client. No operational complexity on your side.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>我们负责邮轮行程，您负责您的客户。您无需处理任何复杂的运营事务。</span><span class="zh-line"><span class="zh-tag">繁</span>我們負責郵輪行程，您負責您的客戶。您無需處理任何複雜的運營事務。</span></span></p>
+        <ul class="model-points">
+          <li><span class="check" style="color:var(--gold);">✓</span> Clear commission on every confirmed group<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>每笔确认的团体订单佣金清晰透明</span><span class="zh-line"><span class="zh-tag">繁</span>每筆確認的團體訂單佣金清晰透明</span></span></li>
+          <li><span class="check" style="color:var(--gold);">✓</span> Simple onboarding, no volume commitment<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>入职流程简单，无业务量承诺</span><span class="zh-line"><span class="zh-tag">繁</span>入職流程簡單，無業務量承諾</span></span></li>
+          <li><span class="check" style="color:var(--gold);">✓</span> Atout France license IM075250047<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>持有Atout France许可证IM075250047</span><span class="zh-line"><span class="zh-tag">繁</span>持有Atout France許可證IM075250047</span></span></li>
+          <li><span class="check" style="color:var(--gold);">✓</span> Hiscox professional liability insurance<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>Hiscox职业责任保险</span><span class="zh-line"><span class="zh-tag">繁</span>Hiscox職業責任保險</span></span></li>
+          <li><span class="check" style="color:var(--gold);">✓</span> Groupama financial guarantee<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>Groupama财务担保</span><span class="zh-line"><span class="zh-tag">繁</span>Groupama財務擔保</span></span></li>
+        </ul>
+      </div>
+      <div class="menu-placeholder" style="height:340px; background:var(--navy); flex-direction:column; gap:6px;">
+        <span style="font-size:12px; text-transform:uppercase; letter-spacing:1.5px; color:var(--gold); font-weight:600;">Starting from<span class="zh"><span class="zh-line" style="color:var(--gold-light);"><span class="zh-tag">简</span>起价</span><span class="zh-line" style="color:var(--gold-light);"><span class="zh-tag">繁</span>起價</span></span></span>
+        <span style="font-family:'Cormorant Garamond', serif; font-size:56px; color:#fff; line-height:1;">180 €<span style="font-size:16px; color:rgba(255,255,255,0.7); font-family:'Montserrat',sans-serif;"> / person</span></span>
+        <span style="font-size:13px; color:rgba(255,255,255,0.7); margin-top:4px;">Partner commission included<span class="zh"><span class="zh-line" style="color:rgba(255,255,255,0.7);"><span class="zh-tag" style="color:var(--gold-light);">简</span>已包含合作伙伴佣金</span><span class="zh-line" style="color:rgba(255,255,255,0.7);"><span class="zh-tag" style="color:var(--gold-light);">繁</span>已包含合作伙伴佣金</span></span></span>
+        <a href="#partner-form" class="btn btn-gold btn-sm" style="margin-top:20px;">Get Full Pricing →</a><span class="zh"><span class="zh-line" style="color:rgba(255,255,255,0.7);"><span class="zh-tag" style="color:var(--gold-light);">简</span>查看完整价格 →</span><span class="zh-line" style="color:rgba(255,255,255,0.7);"><span class="zh-tag" style="color:var(--gold-light);">繁</span>檢視完整價格 →</span></span>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section on-navy-2">
+  <div class="wrap">
+    <div class="eyebrow">Frequently Asked Questions</div><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>常见问题</span><span class="zh-line"><span class="zh-tag">繁</span>常見問題</span></span>
+    <h2 class="section-title" style="margin-bottom:36px;">What our partners<br><em>often ask us.</em><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>我们的合作伙伴经常向我们提出的问题。</span><span class="zh-line"><span class="zh-tag">繁</span>我們的合作伙伴經常向我們提出的問題。</span></span></h2>
+    <div class="faq-list" id="faqList">
+      <div class="faq-item">
+        <button class="faq-q"><span>What commission do you offer?<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>你们提供多少佣金？</span><span class="zh-line"><span class="zh-tag">繁</span>你們提供多少佣金？</span></span></span><span class="plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">The commission grid is shared directly during our first conversation, and adapted based on the volume of groups you send.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>佣金标准将在首次沟通时直接告知，并根据您推荐的团组数量进行调整。</span><span class="zh-line"><span class="zh-tag">繁</span>佣金標準將在首次溝通時直接告知，並根據您推薦的團組數量進行調整。</span></span></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>What is the minimum group size?<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>最低群组规模是多少？</span><span class="zh-line"><span class="zh-tag">繁</span>最低群組規模是多少？</span></span></span><span class="plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Our packages are designed for groups of 6 to 40 people, with some flexibility depending on the boat chosen.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>我们的套餐专为6至40人的团队设计，具体人数可根据所选船型略作调整。</span><span class="zh-line"><span class="zh-tag">繁</span>我們的套餐專為6至40人的團隊設計，具體人數可根據所選船型略作調整。</span></span></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>How far in advance must a date be confirmed?<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>需要提前多久确认日期？</span><span class="zh-line"><span class="zh-tag">繁</span>需要提前多久確認日期？</span></span></span><span class="plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">We confirm any availability request within a maximum of 72 hours of receiving it.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>我们将在收到预订查询后72小时内予以确认。</span><span class="zh-line"><span class="zh-tag">繁</span>我們將在收到預訂查詢後72小時內予以確認。</span></span></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>What happens in case of cancellation?<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>如果取消预订会怎样？</span><span class="zh-line"><span class="zh-tag">繁</span>如果取消預訂會怎樣？</span></span></span><span class="plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Cancellation terms are detailed in our partner terms and conditions, shared upon signing the partnership agreement.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>取消条款详见我们的合作伙伴条款与条件，该文件将在签署合作伙伴协议时提供。</span><span class="zh-line"><span class="zh-tag">繁</span>取消條款詳見我們的合作伙伴條款與條件，該檔案將在簽署合作伙伴協議時提供。</span></span></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>Can you provide a Chinese-speaking guide on board?<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>能否提供一名会说中文的随船导游？</span><span class="zh-line"><span class="zh-tag">繁</span>能否提供一名會說中文的隨船導遊？</span></span></span><span class="plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">A guide is included on board for every gala cruise. A Chinese-speaking guide can also be arranged on request, subject to availability.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>每趟庆典巡游均配备随船导游。如需中文导游，我们也可根据实际情况安排，具体视资源情况而定。</span><span class="zh-line"><span class="zh-tag">繁</span>每趟慶典巡遊均配備隨船導遊。如需中文導遊，我們也可根據實際情況安排，具體視資源情況而定。</span></span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FORM ===== -->
+<section class="section on-cream" id="partner-form">
+  <div class="wrap">
+    <div class="eyebrow">Become a Partner</div><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>成为合作伙伴</span><span class="zh-line"><span class="zh-tag">繁</span>成為合作夥伴</span></span>
+    <div class="form-grid">
+      <div>
+        <h2 class="section-title">Let's talk about<br><em>your next group.</em><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>让我们聊聊您的下一个团队。</span><span class="zh-line"><span class="zh-tag">繁</span>讓我們聊聊您的下一個團隊。</span></span></h2>
+        <p class="section-lede">Fill out this form, and our team will get back to you within 48 business hours with our partnership conditions.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>请填写此表单，我们的团队将在48个工作小时内联系您，并告知合作条款。</span><span class="zh-line"><span class="zh-tag">繁</span>請填寫此表單，我們的團隊將在48個工作小時內聯絡您，並告知合作條款。</span></span></p>
+        <ul class="form-trust">
+          <li><span class="check" style="color:var(--gold);">✓</span> Personalized response within 48 business hours<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>48个工作小时内提供个性化回复</span><span class="zh-line"><span class="zh-tag">繁</span>48個工作小時內提供個性化回覆</span></span></li>
+          <li><span class="check" style="color:var(--gold);">✓</span> No commitment before a signed agreement<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>签署协议前无需承担任何义务</span><span class="zh-line"><span class="zh-tag">繁</span>簽署協議前無需承擔任何義務</span></span></li>
+          <li><span class="check" style="color:var(--gold);">✓</span> Data handled confidentially<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>数据处理严格保密</span><span class="zh-line"><span class="zh-tag">繁</span>資料處理嚴格保密</span></span></li>
+        </ul>
+      </div>
+
+      <div class="form-box">
+        <form id="partnerForm">
+          <input type="text" name="website" id="honeypot" style="position:absolute; left:-9999px; top:-9999px;" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div id="formFields">
+            <div class="form-row">
+              <div class="field">
+                <label for="company">Company / Agency *<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>公司/机构</span><span class="zh-line"><span class="zh-tag">繁</span>公司/機構</span></span></label>
+                <input type="text" id="company" name="company" required>
+              </div>
+              <div class="field">
+                <label for="contact">Contact Name *<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>联系人姓名</span><span class="zh-line"><span class="zh-tag">繁</span>聯絡人姓名</span></span></label>
+                <input type="text" id="contact" name="contact" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="email">Email *<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>电子邮箱</span><span class="zh-line"><span class="zh-tag">繁</span>電子郵箱</span></span></label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="field">
+                <label for="phone">Phone *<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>电话</span><span class="zh-line"><span class="zh-tag">繁</span>電話</span></span></label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="orgtype">Organization Type *<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>组织类型</span><span class="zh-line"><span class="zh-tag">繁</span>組織類型</span></span></label>
+                <select id="orgtype" name="orgtype" required>
+                  <option value="">— select / 请选择 —</option>
+                  <option value="Travel Agency">Travel Agency 旅行社</option>
+                  <option value="Tour Operator">Tour Operator 旅游运营商</option>
+                  <option value="Guide Association">Guide Association 导游协会</option>
+                  <option value="Hotel Concierge">Hotel Concierge 酒店礼宾部</option>
+                  <option value="Other">Other 其他</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="volume">Monthly Group Volume<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>每月团组数量</span><span class="zh-line"><span class="zh-tag">繁</span>每月團組數量</span></span></label>
+                <select id="volume" name="volume">
+                  <option value="">— not defined / 未定义 —</option>
+                  <option value="1 to 2 groups">1 to 2 groups 1至2个团组</option>
+                  <option value="3 to 5 groups">3 to 5 groups 3至5个团组</option>
+                  <option value="6 groups or more">6 groups or more 6个或更多团组</option>
+                </select>
+              </div>
+            </div>
+            <div class="field" style="margin-bottom:18px;">
+              <label for="message">Message<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>留言</span><span class="zh-line"><span class="zh-tag">繁</span>留言</span></span></label>
+              <textarea id="message" name="message" placeholder="Tell us about your clientele, your usual booking periods, or any questions you have..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold form-submit">Request Partnership Info →</button><span class="zh" style="text-align:center; margin-top:-10px; margin-bottom:14px;"><span class="zh-line"><span class="zh-tag">简</span>申请合作信息 →</span><span class="zh-line"><span class="zh-tag">繁</span>申請合作資訊 →</span></span>
+            <p class="form-note">Confidential data · KCOB SAS · Atout France IM075250047<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>机密数据 · KCOB SAS · Atout France IM075250047</span><span class="zh-line"><span class="zh-tag">繁</span>機密資料 · KCOB SAS · Atout France IM075250047</span></span></p>
+          </div>
+
+          <div class="form-success" id="formSuccess">
+            <h3>Thank you, it's sent.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>谢谢，已发送。</span><span class="zh-line"><span class="zh-tag">繁</span>謝謝，已傳送。</span></span></h3>
+            <p>Our team will get back to you within 48 business hours with our partnership conditions.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>我们的团队将在48个工作小时内与您联系，并告知合作条款。</span><span class="zh-line"><span class="zh-tag">繁</span>我們的團隊將在48個工作小時內與您聯絡，並告知合作條款。</span></span></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST BAND ===== -->
+<section class="section section--tight on-navy-2">
+  <div class="wrap trust-band">
+    <img src="images/logo-blanc.svg" alt="Nautic Experiences" class="trust-logo">
+    <div class="trust-grid">
+  <div class="trust-card">
+    <span class="trust-card-title">Immatriculation<br>N°IM075250047<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>注册号 IM075250047</span><span class="zh-line"><span class="zh-tag">繁</span>註冊號 IM075250047</span></span></span>
+    <img src="images/logo-atout-france.jpg" alt="Atout France IM075250047">
+  </div>
+  <div class="trust-card">
+    <span class="trust-card-title">Assurance RC Pro<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>职业责任保险</span><span class="zh-line"><span class="zh-tag">繁</span>職業責任保險</span></span></span>
+    <img src="images/logo-hiscox.jpg" alt="Assurance RC Pro Hiscox">
+  </div>
+  <div class="trust-card">
+    <span class="trust-card-title">Garantie Financière<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>财务担保</span><span class="zh-line"><span class="zh-tag">繁</span>財務擔保</span></span></span>
+    <img src="images/logo-groupama.jpg" alt="Garantie financière Groupama">
+  </div>
+  <div class="trust-card">
+    <span class="trust-card-title">Paiement 100% sécurisé<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>100% 安全支付</span><span class="zh-line"><span class="zh-tag">繁</span>100% 安全支付</span></span></span>
+    <img src="images/logos-paiement.png" alt="Paiement sécurisé CB Visa Mastercard">
+  </div>
+</div>
+    <div class="trust-since">Nautic Experiences — Cruise Operator since 2017<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>Nautic Experiences——自2017年起运营的游轮公司</span><span class="zh-line"><span class="zh-tag">繁</span>Nautic Experiences——自2017年起運營的遊輪公司</span></span></div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>KCOB SAS · Siret 832 358 543 00029 · 1 Cour du Havre, 75008 Paris · contact@nautic-experiences.pro<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>KCOB SAS · 法国工商注册号 832 358 543 00029 · 1 Cour du Havre, 75008 巴黎 · contact@nautic-experiences.pro</span><span class="zh-line"><span class="zh-tag">繁</span>KCOB SAS · 法國工商註冊號 832 358 543 00029 · 1 Cour du Havre, 75008 巴黎 · contact@nautic-experiences.pro</span></span></span>
+    <div class="footer-links">
+      <a href="legal-notice.html">Legal Notice</a>
+      <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/33759944949?text=Hello%2C%20I%27d%20like%20more%20information" class="whatsapp-float" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M20.52 3.449C12.831-3.984.106 1.407.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652a11.882 11.882 0 005.723 1.457h.005c9.607 0 14.352-11.85 7.454-18.673l1.003-1.683zM12.063 21.784h-.005a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.977.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.253c.005-5.45 4.437-9.876 9.891-9.876 2.641 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.874-9.887 9.874z"/></svg>
+</a>
+
+<script>
+  // ----- Fleet tabs -----
+  const fleetTabs = document.querySelectorAll('.fleet-tab');
+  const fleetPanels = document.querySelectorAll('.fleet-panel');
+  fleetTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const boat = tab.dataset.boat;
+      fleetTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      fleetPanels.forEach(p => p.classList.toggle('active', p.dataset.boat === boat));
+    });
+  });
+
+  // ----- Included / Optional toggle -----
+  const toggleBtns = document.querySelectorAll('.toggle-btn');
+  const togglePanels = document.querySelectorAll('.toggle-panel');
+  toggleBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const key = btn.dataset.toggle;
+      toggleBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      togglePanels.forEach(p => p.classList.toggle('active', p.dataset.toggle === key));
+    });
+  });
+
+  // ----- FAQ accordion -----
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-q').addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if(!isOpen) item.classList.add('open');
+    });
+  });
+
+  // ----- Form submit -----
+  const ZAPIER_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/27147655/42pgqyt/";
+  const form = document.getElementById('partnerForm');
+  const formFields = document.getElementById('formFields');
+  const formSuccess = document.getElementById('formSuccess');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Honeypot check — silently ignore likely bot submissions
+    const honeypotValue = document.getElementById('honeypot').value;
+    if (honeypotValue !== '') {
+      return;
+    }
+
+    const submitBtn = form.querySelector('.form-submit');
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+
+    const data = {
+      company: document.getElementById('company').value,
+      contact: document.getElementById('contact').value,
+      email: document.getElementById('email').value,
+      phone: document.getElementById('phone').value,
+      orgtype: document.getElementById('orgtype').value,
+      volume: document.getElementById('volume').value,
+      message: document.getElementById('message').value,
+      source: "Landing Page TO - Nautic Experiences"
+    };
+
+    try {
+      const formBody = new URLSearchParams(data).toString();
+      await fetch(ZAPIER_WEBHOOK_URL, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: formBody
+      });
+      formFields.style.display = 'none';
+      formSuccess.classList.add('show');
+    } catch(err) {
+      console.error('Erreur envoi formulaire', err);
+      submitBtn.textContent = 'Error — try again';
+      submitBtn.disabled = false;
+    }
+  });
+  // ----- Fleet photo galleries (main image + thumbnails + autoplay) -----
+  document.querySelectorAll('.fleet-photos').forEach(container => {
+    const mainImg = container.querySelector('.fleet-main-image img');
+    const thumbs = container.querySelectorAll('.fleet-thumb');
+    let index = 0;
+    let timer = null;
+
+    function show(i){
+      index = (i + thumbs.length) % thumbs.length;
+      const active = thumbs[index];
+      mainImg.style.opacity = 0;
+      setTimeout(() => {
+        mainImg.src = active.dataset.src;
+        mainImg.alt = active.dataset.alt;
+        mainImg.style.opacity = 1;
+      }, 150);
+      thumbs.forEach((t, ti) => t.classList.toggle('active', ti === index));
+    }
+
+    function startAutoplay(){
+      clearInterval(timer);
+      timer = setInterval(() => show(index + 1), 4000);
+    }
+
+    thumbs.forEach((thumb, i) => {
+      thumb.addEventListener('click', () => {
+        show(i);
+        startAutoplay();
+      });
+    });
+
+    startAutoplay();
+  });
+</script>
+
+
+</body>
+</html>
