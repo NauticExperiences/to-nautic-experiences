@@ -118,7 +118,6 @@
   .topbar{
     position:sticky; top:0; z-index:50;
     background:var(--navy-3);
-    border-bottom:1px solid var(--line-light);
   }
   .topbar-inner{
     display:flex; align-items:center; justify-content:space-between;
@@ -606,6 +605,33 @@
   .zh-line{display:block; font-size:13.5px;}
   .zh-tag{font-weight:700; margin-right:6px; opacity:0.85; font-size:13.5px;}
   .zh em{font-style:normal; color:inherit;}
+  .wechat-modal{
+    display:none;
+    position:fixed; inset:0; z-index:1000;
+    align-items:center; justify-content:center;
+  }
+  .wechat-modal.show{display:flex;}
+  .wechat-modal-backdrop{
+    position:absolute; inset:0;
+    background:rgba(15,24,48,0.75);
+  }
+  .wechat-modal-box{
+    position:relative;
+    background:#fff;
+    border-radius:6px;
+    padding:20px;
+    max-width:320px;
+    width:88%;
+    box-shadow:0 20px 60px rgba(0,0,0,0.4);
+  }
+  .wechat-modal-box img{width:100%; display:block; border-radius:2px;}
+  .wechat-modal-close{
+    position:absolute; top:-14px; right:-14px;
+    width:32px; height:32px; border-radius:50%;
+    background:var(--navy); color:#fff; border:none;
+    font-size:20px; line-height:1; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+  }
   .whatsapp-float{
     position:fixed;
     bottom:24px;
@@ -638,9 +664,9 @@
         <svg viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.5 17.311l-1.76-3.397-1.032.505c-1.12.543-3.4-3.91-2.305-4.497l1.042-.513-1.747-3.409-1.053.52c-3.601 1.877 2.117 12.991 5.8 11.308l1.055-.517z"/></svg>
         <span>(+33) 01 83 64 56 74</span>
       </a>
-      <a href="#" class="topbar-phone topbar-wechat" title="WeChat: NauticExperiences (update with your real WeChat ID)">
+      <button type="button" class="topbar-phone topbar-wechat" onclick="document.getElementById('wechatModal').classList.add('show')" title="WeChat QR Code" style="background:none; border:none; cursor:pointer; font-family:inherit;">
         <svg viewBox="0 0 24 24" fill="var(--gold)"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.161 4.203 2.976 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.867.403c.276 0 .543-.027.811-.05-.857-2.578.157-5.096 1.996-6.582 1.826-1.485 4.216-1.882 6.404-1.485-.457-3.416-3.966-6.565-9.215-6.565zM5.785 5.657c.554 0 1.003.449 1.003 1.003s-.45 1.003-1.003 1.003a1.003 1.003 0 0 1 0-2.006zm6.03 0c.554 0 1.003.449 1.003 1.003s-.449 1.003-1.003 1.003a1.003 1.003 0 0 1 0-2.006zm5.634 3.14c-3.652 0-6.618 2.472-6.618 5.522 0 3.05 2.966 5.522 6.618 5.522.734 0 1.44-.108 2.099-.294a.727.727 0 0 1 .605.083l1.598.936a.274.274 0 0 0 .14.045.243.243 0 0 0 .244-.243c0-.06-.024-.12-.04-.179l-.328-1.245a.494.494 0 0 1 .18-.559C23.283 17.44 24 16.088 24 14.32c0-3.05-2.966-5.522-6.551-5.522zm-2.588 2.658c.462 0 .837.375.837.836a.836.836 0 1 1-.837-.836zm5.176 0c.462 0 .837.375.837.836a.836.836 0 1 1-.837-.836z"/></svg>
-      </a>
+      </button>
       <a href="#partner-form" class="btn btn-gold btn-sm">Become a Partner</a>
     </div>
   </div>
@@ -658,7 +684,7 @@
       <span style="display:inline-block;"><a href="#fleet" class="btn btn-outline-white">Explore The Fleet</a><span class="zh"><span class="zh-line"><span class="zh-tag">简</span>探索船队</span><span class="zh-line"><span class="zh-tag">繁</span>探索船隊</span></span></span>
     </div>
     <div class="hero-stats">
-      <div class="hero-stat"><span class="hero-stat-n">180&nbsp;€</span><span class="hero-stat-l">Avg. ticket / pers.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>人均票价</span><span class="zh-line"><span class="zh-tag">繁</span>人均票價</span></span></span></div>
+      <div class="hero-stat"><span class="hero-stat-n">355&nbsp;€</span><span class="hero-stat-l">Avg. ticket / pers.<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>人均票价</span><span class="zh-line"><span class="zh-tag">繁</span>人均票價</span></span></span></div>
       <div class="hero-stat"><span class="hero-stat-n">6–40</span><span class="hero-stat-l">People / group<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>每组人数</span><span class="zh-line"><span class="zh-tag">繁</span>每組人數</span></span></span></div>
       <div class="hero-stat"><span class="hero-stat-n">Licensed French DMC<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>持牌法国目的地管理公司（DMC）</span><span class="zh-line"><span class="zh-tag">繁</span>持牌法國目的地管理公司（DMC）</span></span></span><span class="hero-stat-l">Local Expert · IM075250047<span class="zh"><span class="zh-line"><span class="zh-tag">简</span>当地专家 · IM075250047</span><span class="zh-line"><span class="zh-tag">繁</span>當地專家 · IM075250047</span></span></span></div>
     </div>
@@ -1072,7 +1098,7 @@
       </div>
       <div class="menu-placeholder" style="height:340px; background:var(--navy); flex-direction:column; gap:6px;">
         <span style="font-size:12px; text-transform:uppercase; letter-spacing:1.5px; color:var(--gold); font-weight:600;">Starting from<span class="zh"><span class="zh-line" style="color:var(--gold-light);"><span class="zh-tag">简</span>起价</span><span class="zh-line" style="color:var(--gold-light);"><span class="zh-tag">繁</span>起價</span></span></span>
-        <span style="font-family:'Cormorant Garamond', serif; font-size:56px; color:#fff; line-height:1;">180 €<span style="font-size:16px; color:rgba(255,255,255,0.7); font-family:'Montserrat',sans-serif;"> / person</span></span>
+        <span style="font-family:'Cormorant Garamond', serif; font-size:56px; color:#fff; line-height:1;">355 €<span style="font-size:16px; color:rgba(255,255,255,0.7); font-family:'Montserrat',sans-serif;"> / person</span></span>
         <span style="font-size:13px; color:rgba(255,255,255,0.7); margin-top:4px;">Partner commission included<span class="zh"><span class="zh-line" style="color:rgba(255,255,255,0.7);"><span class="zh-tag" style="color:var(--gold-light);">简</span>已包含合作伙伴佣金</span><span class="zh-line" style="color:rgba(255,255,255,0.7);"><span class="zh-tag" style="color:var(--gold-light);">繁</span>已包含合作伙伴佣金</span></span></span>
         <a href="#partner-form" class="btn btn-gold btn-sm" style="margin-top:20px;">Get Full Pricing →</a><span class="zh"><span class="zh-line" style="color:rgba(255,255,255,0.7);"><span class="zh-tag" style="color:var(--gold-light);">简</span>查看完整价格 →</span><span class="zh-line" style="color:rgba(255,255,255,0.7);"><span class="zh-tag" style="color:var(--gold-light);">繁</span>檢視完整價格 →</span></span>
     </div>
@@ -1226,6 +1252,14 @@
     </div>
   </div>
 </footer>
+
+<div id="wechatModal" class="wechat-modal">
+  <div class="wechat-modal-backdrop" onclick="document.getElementById('wechatModal').classList.remove('show')"></div>
+  <div class="wechat-modal-box">
+    <button type="button" class="wechat-modal-close" onclick="document.getElementById('wechatModal').classList.remove('show')" aria-label="Close">&times;</button>
+    <img src="images/wechat-qr.png" alt="Nautic Experiences WeChat QR Code">
+  </div>
+</div>
 
 <a href="https://wa.me/33759944949?text=Hello%2C%20I%27d%20like%20more%20information" class="whatsapp-float" target="_blank" rel="noopener">
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M20.52 3.449C12.831-3.984.106 1.407.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652a11.882 11.882 0 005.723 1.457h.005c9.607 0 14.352-11.85 7.454-18.673l1.003-1.683zM12.063 21.784h-.005a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.977.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.253c.005-5.45 4.437-9.876 9.891-9.876 2.641 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.874-9.887 9.874z"/></svg>
